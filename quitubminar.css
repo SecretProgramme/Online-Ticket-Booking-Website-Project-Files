@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Wrapper setup */
+html, body {
+    height: 100%; /* Ensure the body fills the viewport height */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make wrapper fill the viewport height */
+}
+main {
+    flex: 1; /* Pushes the footer to the bottom */
+    padding: 200px;
+    margin: 10px auto; /* Optional: Add padding for main content */
+    max-width: 600px; /* Ensure main content width doesn't exceed the box */
+    width: 90%; /* Ensure responsiveness for smaller screens */
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f8f3;
+    color: #333;
+    padding: 20px;
+    background-image: url(Image10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+header {
+    background-color: #2d6a4f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Main Content */
+main {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Reduce padding for better alignment */
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #2d6a4f;
+}
+
+form input,
+form select {
+    width: 100%; /* Ensure fields take up full width of their container */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #2d6a4f;
+    box-shadow: 0 0 5px rgba(45, 106, 79, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background-color: #2d6a4f;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #40916c;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    form input,
+    form select {
+        font-size: 0.9rem;
+    }
+}

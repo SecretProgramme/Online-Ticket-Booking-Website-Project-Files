@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Fort</title>
+    <link rel="stylesheet" href="redfort.css">
+</head>
+<body>
+    <script src="redfort.js" defer></script>
+    <div class="wrapper">
+    <header>
+        <h1 id = "dynamic-header">GET DISCOUNT USE CODE FITOU07</h1>
+    </header>
+    <main>
+        <form action="payment1.html" method="get" target="_blank">
+            <div>
+                <label for = "firstname">First Name</label>
+                <input id="firstname" name="firstname" type="text" required>
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input id="lastname" name = "lastname" type="text" required>
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <input id="address" name = "address" type="text" required>
+            </div>
+            <div>
+                <label for="city">city</label>
+                <input id="city" name = "city" type="text" required>
+            </div>
+            <div>
+                <label for="pincode">PINCODE</label>
+                <input id="pincode" name = "pincode" type="text" required>
+            </div>
+            <div>
+                <label for="mobile">Mobile Number</label>
+                <input id="mobile" name = "mobile" type="tel" required>
+            </div>
+            <div>
+                <label for="dob">DOB</label>
+                <input id="dob" name = "dob" type="date" required>
+            </div>
+            <div>
+                <select id = "gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div>
+                <label for="nationality">Nationality</label>
+                <select id = "nationality" name="nationality" required>
+                    <option value="" disabled selected>Select Nationality</option>
+                    <option value="indian">Indian National</option>
+                    <option value="foreign">Foreign National</option>
+                </select>
+            </div>
+            <div id="additional-fields"></div>
+        
+            <button type="submit" >SUBMIT</button>
+            
+            
+            
+
+        </form>
+    </main>
+    
+    <footer>
+        LIVEEASY IS AN ONLINE TICKET BOOKING PLATFORM. ALL RIGHTS RESERVED ©.
+    </footer>
+    </div>
+    
+</body>
+</html>

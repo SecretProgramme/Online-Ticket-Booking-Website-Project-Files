@@ -1,0 +1,106 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Wrapper setup */
+html, body {
+    height: 100%; /* Ensure the body fills the viewport height */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make wrapper fill the viewport height */
+}
+
+main {
+    flex: 1; /* Pushes the footer to the bottom */
+    padding: 20px; /* Optional: Add padding for main content */
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 300;
+    background-color: #f4f4f9;
+    background-image: url(Image8.jpg);
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 100px; /* Increase padding to make the container thicker */
+    background: #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* More shadow for depth */
+    border-radius: 10px;
+    border: 2px solid #ddd; /* Thicker border */
+}
+
+/* Styling for label */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Styling for select fields */
+select {
+    width: 100%;
+    padding: 12px; /* Increase padding for select */
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Styling for options container */
+#options-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Styling for payment options box */
+.payment-option {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #ddd; /* Thicker border */
+    padding: 15px; /* Thicker padding for the box */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* More depth */
+    width: calc(50% - 10px);
+}
+
+.payment-option img.logo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.payment-option span {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
